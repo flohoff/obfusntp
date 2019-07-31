@@ -1,0 +1,18 @@
+
+Obfuscating ntpd
+================
+
+This is a minimalistic and incomplete implementation of SNTP for the sole purpose
+of faking time and spreading clients out e.g. distributing client times in a
+certain time range e.g. +-10 Minutes.
+
+Source for the offset is the clients ip address so subsequent requests get
+the very same offset.
+
+It has been used to spread out disconnection times of a malfunctioning
+CPE/Home Router timed event.
+
+Building
+========
+
+You will need libevent-dev and pkg-config installed. Simply type make.

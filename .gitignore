@@ -1,0 +1,6 @@
+*.o
+*~
+.*
+!.gitignore
+Makefile.defs
+ontpd
